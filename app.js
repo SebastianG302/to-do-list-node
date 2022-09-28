@@ -1,5 +1,6 @@
 import colors from 'colors'
 import {inquirerMenu, pause} from './helpers/inquirer.js'
+import { Tasks } from './models/tasks.js';
 
 
 const main = async() =>{

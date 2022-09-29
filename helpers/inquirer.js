@@ -60,7 +60,30 @@ const pause = async() =>{
     }]);
 }
 
+
+const readInput = async( message ) => {
+    const question = [
+        {
+            type: 'input',
+            name: 'description',
+            message,
+            validate( value ){
+                if (value.length === 0)
+                    return '¡Enter a valid value!'
+                return true
+            }
+        }
+    ];
+
+    const { description } = await inquirer.prompt(question);
+
+    return description
+}
+
+
+
 export{
     inquirerMenu,
-    pause
+    pause,
+    readInput
 }

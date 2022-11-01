@@ -77,7 +77,7 @@ const readInput = async( message ) => {
 
     const { description } = await inquirer.prompt(question);
 
-    return description
+    return description;
 }
 
 

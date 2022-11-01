@@ -5,7 +5,6 @@ import { Tasks } from './models/tasks.js';
 
 
 const main = async() =>{
-    console.log('Hello World');
 
     let opt = '';
     const tasks = new Tasks();
@@ -28,7 +27,7 @@ const main = async() =>{
             break;
         
             case '2':
-                console.log(tasks.listArr);
+                tasks.list();
             break;
         }
 
